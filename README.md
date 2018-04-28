@@ -1,8 +1,11 @@
 # Download
 cmsrel CMSSW_9_4_0(any version works)
+
 cd CMSSW_9_4_0/src
+
 cmsenv
-git clone  https://github.com/CMSDIJET/DarkMatterInterpretation.git 
+
+git clone https://github.com/CMSDIJET/DarkMatterInterpretation.git 
 
 # DarkMatterInterpretation
 
