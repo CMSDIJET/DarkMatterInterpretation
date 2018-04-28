@@ -1,0 +1,20 @@
+imax 1 number of channels
+jmax 1 number of processes minus 1
+kmax * number of nuisance parameters
+------------------------------------------------------------
+observation	98503771.000
+------------------------------------------------------------
+shapes * * ./dijet_combine_gaus_1100_lumi-4.508_CaloDijet20152016.root wCaloDijet20152016:$PROCESS wCaloDijet20152016:$PROCESS_$SYSTEMATIC
+------------------------------------------------------------
+bin	CaloDijet20152016	CaloDijet20152016
+process	CaloDijet20152016_gaus	CaloDijet20152016_bkg
+process	0	1
+rate	45080.000	98503773.371
+------------------------------------------------------------
+lumi	lnN	1.027	1.000
+jes	shape		1.0	-
+jer	shape		1.0	-
+p1_CaloDijet20152016	flatParam
+p2_CaloDijet20152016	flatParam
+p3_CaloDijet20152016	flatParam
+CaloDijet20152016_bkg_norm	flatParam

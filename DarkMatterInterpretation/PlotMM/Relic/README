@@ -1,0 +1,46 @@
+0) Setup
+
+- Install MadGraph:
+https://launchpad.net/mg5amcnlo
+- In the MG5_aMC_vx_y_z/model directory, get the DMSimp models:
+http://feynrules.irmp.ucl.ac.be/wiki/DMsimp
+- Make sure the couplings correspond to the LHC DM WG recommendations:
+V&A: gq=1, gDM=0.25
+S&P: gq=gDM=1
+- Install MadDM in the MG5_aMC_vx_y_z directory:
+Make sure it is version >2.0.6, as this has the fix for the DM DM > Z' Z' process.
+
+1) First crosscheck
+
+- Run the MadDM script example.py
+- Then, change the example.py script such that it points to
+--> Your DMSimp model
+--> The correct DM candidate
+Choose some benchmark points (coupling/masses) to crosscheck the results are correct.
+Previous CMS results, to crosscheck, are documented here: http://arxiv.org/abs/1603.08525 
+
+2) Then, scan the parameters
+
+For this, you can use: param_scan_default.py
+
+This is by default provided by MadDM.
+The version in this directory has some modifications to make the scanning easier.
+It needs to be run in the Projects/<projectname> directory.
+
+The main thing is that you should change the name of the scan parameters.
+In your case these are:
+--> the mass of the DM particle 
+--> the mass of the Mediator
+
+3) Finally, to make a nicer plot
+
+plotTGraph2D.py
+
+This is for plotting. You can use that after the full scan is done.
+(Scan used to take a few hours, but this might be longer with the new models.)
+
+=========================
+
+In case of questions:
+- tristan.dupree@cern.ch
+- CERN 40-R-B08
