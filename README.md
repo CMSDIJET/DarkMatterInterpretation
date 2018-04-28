@@ -10,10 +10,13 @@ git clone https://github.com/CMSDIJET/DarkMatterInterpretation.git
 # DarkMatterInterpretation
 
 To plot coupling VS M_med, using 
+
   python limits_gBdijetslimits_2017.py
   
 To plot M_DM VS M_med VS coupling plot, using:
+
   python limits_3D/dijet_For2017.py
   
 To plot M_DM VS M_med plot, using:
+
   python PlotMM/plotMM.py 
