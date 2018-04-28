@@ -20,3 +20,6 @@ To plot M_DM VS M_med VS coupling plot, using:
 To plot M_DM VS M_med plot, using:
 
   python PlotMM/plotMM.py 
+  
+# comment
+  the input of PlotMM/plotMM.py is in PlotMM/Dijet/PlotMM/, every time you run limits_3D/dijet_For2017.py, you will have an expected and observed txt file for each model, you can copy that to PlotMM/Dijet/PlotMM/.
